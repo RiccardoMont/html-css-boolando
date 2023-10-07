@@ -63,6 +63,20 @@
 
 .row {
     display: flex;
+    flex-wrap: wrap;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.justifycontent-center{
+    justify-content: center;
 }
 
 .justifycontent-between{
@@ -77,20 +91,62 @@ a {
     text-decoration: none;
 }
 
-a:visited{
-    color: inherit;
-}
-
 .color-white {
     color: var(--bg-and-text-white);
 }
 
-.p-1{
+.color-red {
+    color: var(--tag-and-text-red);
+}
+
+.p-1 {
+    padding: 1rem;
+}
+.ptb-1{
     padding: 1rem 0;
+}
+
+.p-05-1 {
+    padding: 0.5rem 1rem;
 }
 
 .p-025{
     padding: 0.25rem;
+}
+
+.p-025-05{
+    padding: 0.25rem 0.5rem;
+}
+
+.gap-10px{
+    gap: 10px;
+}
+
+.position-fixed-t0 {
+    position: fixed;
+    top: 0;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.position-absolute {
+    position: absolute;
+}
+
+.right-0-top-10px {
+    right: 0;
+    top: 10px;
+}
+
+.left-0-bottom-20px {
+    left: 0;
+    bottom: 90px;
+}
+
+.z-index-1 {
+    z-index: 1;
 }
 
 /*Utility*/
@@ -103,20 +159,39 @@ a:visited{
     font-weight: 600;
 }
 
+.size-10 {
+    font-size: 10px;
+}
+
 .size-12 {
     font-size: 12px;
+}
+
+.size-16 {
+    font-size: 16px;
+}
+
+.size-30 {
+    font-size: 30px;
+}
+
+.erase{
+    text-decoration: line-through;
+}
+
+.line-height-09{
+    line-height: 0.9rem;
 }
 /*typography*/
 
 .site-header{
+    position: fixed;
     background-color: var(--bg-header-orange);
-   
     box-shadow: 0 2px 3px 1px #969292f0;
 }
 
 .categories {
     display: flex;
-    gap: 8px;
 }
 
 .logo {
@@ -125,7 +200,47 @@ a:visited{
 
 nav {
     display: flex;
-    gap: 10px;
 }
 
 /*header*/
+
+.site-main {
+    margin-top: 8rem;
+}
+
+.resize{
+    width:100%
+}
+
+.different-image {
+    width: 0%;
+}
+/*
+.img-card:hover {
+    
+    &.different-image {
+        width: 100%;
+    }
+
+}*/
+
+.heart {
+    background-color: var(--bg-and-text-white);
+}
+
+.red-heart:hover{
+    color: var(--tag-and-text-red);
+}
+
+.red-heart:active {
+    color: var(--tag-and-text-red);
+}
+
+.sconto50 {
+    background-color: var(--tag-and-text-red);
+}
+
+.sostenibile{
+    background-color: var(--tag-green);
+}
+
