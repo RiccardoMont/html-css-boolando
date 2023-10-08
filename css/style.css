@@ -5,7 +5,7 @@
 }
 
 /*General setup*/
-
+/*Colonne in dodicesimi*/
 .col-1{
     width: calc(100%/12);
 }
@@ -43,8 +43,8 @@
     width: 100%;
 }
 
-/*Colonne in dodicesimi*/
-
+/* End Colonne in dodicesimi*/
+/*root*/
 :root {
     --bg-header-orange: #ff6900;
     --bg-and-text-white: #ffffff;
@@ -54,13 +54,17 @@
 }
 
 
-/*root*/
+/*End root*/
+/*Utility*/
 .container {
     width: 80%;
     max-width: 1152;
     margin: auto;
 }
-
+a {
+    text-decoration: none;
+}
+/*Flex properties*/
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -87,10 +91,7 @@
     align-items: center;
 }
 
-a {
-    text-decoration: none;
-}
-
+/*Colors*/
 .color-white {
     color: var(--bg-and-text-white);
 }
@@ -99,6 +100,7 @@ a {
     color: var(--tag-and-text-red);
 }
 
+/*Paddings Margins Gaps*/
 .p-1 {
     padding: 1rem;
 }
@@ -118,10 +120,15 @@ a {
     padding: 0.25rem 0.5rem;
 }
 
+.mb-2-5{
+    margin-bottom: 2.5rem;
+}
+
 .gap-10px{
     gap: 10px;
 }
 
+/*Positions*/
 .position-fixed-t0 {
     position: fixed;
     top: 0;
@@ -135,6 +142,11 @@ a {
     position: absolute;
 }
 
+.left-0-top-0 {
+    left: 0;
+    top: 0;
+}
+
 .right-0-top-10px {
     right: 0;
     top: 10px;
@@ -145,12 +157,26 @@ a {
     bottom: 90px;
 }
 
+.object-fit-cover {
+    object-fit: cover;
+}
+
+/*Transiction effects*/
+.opacity-0 {
+    opacity: 0;
+}
+
+.transition-05s {
+    transition: 0.5s;
+}
+
+/*Z-index*/
 .z-index-1 {
     z-index: 1;
 }
 
-/*Utility*/
-
+/*End Utility*/
+/*Typography*/
 .helvetica {
     font-family: Helvetica, Arial, sans-serif;
 }
@@ -182,8 +208,8 @@ a {
 .line-height-09{
     line-height: 0.9rem;
 }
-/*typography*/
-
+/*End typography*/
+/*Header*/
 .site-header{
     position: fixed;
     background-color: var(--bg-header-orange);
@@ -202,8 +228,8 @@ nav {
     display: flex;
 }
 
-/*header*/
-
+/*End Header*/
+/*Main*/
 .site-main {
     margin-top: 8rem;
 }
@@ -212,17 +238,9 @@ nav {
     width:100%
 }
 
-.different-image {
-    width: 0%;
+.different-image:hover {
+    opacity: 1;
 }
-/*
-.img-card:hover {
-    
-    &.different-image {
-        width: 100%;
-    }
-
-}*/
 
 .heart {
     background-color: var(--bg-and-text-white);
@@ -244,3 +262,5 @@ nav {
     background-color: var(--tag-green);
 }
 
+/*End-Main*/
+/*Footer*/
